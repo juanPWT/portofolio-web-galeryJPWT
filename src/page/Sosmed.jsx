@@ -9,7 +9,7 @@ const Sosmed = () => {
         <div className="relative z-10">
           <Navbar />
         </div>
-        <div className=" relative z-0">
+        <div className="mt-20 relative z-0">
           <DataSosmed />
         </div>
 

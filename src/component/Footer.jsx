@@ -1,4 +1,12 @@
+import { useState } from "react";
+
 const Footer = () => {
+  const [isHidden, setIsHidden] = useState(true);
+
+  const handleClick = () => {
+    setIsHidden(!isHidden);
+  };
+
   return (
     <>
       <footer className="bg-gradient-to-t from-slate-300  w-full shadow ">
@@ -11,9 +19,19 @@ const Footer = () => {
             </a>
             <ul className="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0 ">
               <li>
-                <a href="#" className="hover:underline">
+                <a
+                  className="hover:underline cursor-pointer"
+                  onClick={handleClick}
+                >
                   Contact
                 </a>
+                <span
+                  className={`text-lg text-gray-700 ${
+                    isHidden ? "hidden" : ""
+                  }`}
+                >
+                  : juanpratamapekalongan@gmail.com
+                </span>
               </li>
             </ul>
           </div>
