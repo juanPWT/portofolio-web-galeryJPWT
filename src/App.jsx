@@ -15,12 +15,12 @@ function App() {
     setLoading(true);
     setTimeout(() => {
       setLoading(false);
-    }, 2000);
+    }, 3000);
   }, []);
   return (
     <>
       {loading ? (
-        <div className="min-h-screen bg-slate-800 ">
+        <div className="min-h-screen bg-slate-300 ">
           <div className="flex justify-center items-center h-screen">
             <ClimbingBoxLoader
               color={"#ffffff"}

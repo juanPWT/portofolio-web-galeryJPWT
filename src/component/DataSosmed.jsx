@@ -2,11 +2,11 @@ const DataSosmed = () => {
   return (
     <>
       <div className="container p-8 mx-auto font-inter ">
-        <h1 className="h-16 text-xl font-bold text-slate-500 ">
+        <h1 className="h-16 text-xl font-bold text-slate-500 dark:text-slate-100">
           My Social Media
         </h1>
         <div className="grid gap-4 sm:grid-cols-2">
-          <div className="h-15 aspect-[4/3] bg-slate-300 rounded-xl overflow-hidden shadow-lg sm:aspect-[3/4] md:aspect-[4/4] xl:aspect-[4/2]">
+          <div className="h-15 aspect-[4/4] bg-slate-300 rounded-xl overflow-hidden shadow-lg sm:aspect-[3/4] md:aspect-[4/4] xl:aspect-[4/2] dark:shadow-indigo-300">
             <div className="w-full h-48  flex">
               <div className="m-auto text-slate-500">
                 <svg
@@ -15,7 +15,7 @@ const DataSosmed = () => {
                   viewBox="0 0 256 256"
                   version="1.1"
                   xmlns="http://www.w3.org/2000/svg"
-                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                  xmlnsXlink="http://www.w3.org/1999/xlink"
                   preserveAspectRatio="xMidYMid"
                 >
                   <g>
@@ -40,7 +40,7 @@ const DataSosmed = () => {
             </div>
           </div>
 
-          <div className=" h-15 aspect-[4/3] bg-slate-300 rounded-xl overflow-hidden shadow-lg  sm:aspect-[3/4] md:aspect-[4/4] xl:aspect-[4/2]">
+          <div className=" h-15 aspect-[4/4] bg-slate-300 rounded-xl overflow-hidden shadow-lg  sm:aspect-[3/4] md:aspect-[4/4] xl:aspect-[4/2] dark:shadow-indigo-300">
             <div className="w-full h-48  flex">
               <div className="m-auto text-slate-500">
                 <svg

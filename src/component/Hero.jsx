@@ -3,10 +3,11 @@ const Hero = () => {
     <>
       <div className="container font-inter px-8 py-2 max-w-md mx-auto sm:max-w-xl md:max-w-full  md:flex md:px-0 md:py-5 ">
         <div className="md:mt-4 md:flex-1 md:px-6">
-          <h1 className="text-4xl font-bold text-slate-700">
-            Digi<span className="text-slate-300">tal</span>
-            <span className="text-slate-300"> Pain</span>ting
-            <div className="mt-5 h-20  text-white  bg-slate-400 rounded-r-full flex shadow-lg  sm:mt-2 md:rounded-full">
+          <h1 className="text-4xl font-bold text-slate-700 dark:text-slate-100">
+            Digi<span className="text-slate-300 dark:text-slate-700">tal</span>
+            <span className="text-slate-300 dark:text-slate-700"> Pain</span>
+            ting
+            <div className="mt-5 h-20  text-white  bg-slate-400 rounded-r-full flex shadow-lg  sm:mt-2 md:rounded-full dark:text-gray-500 dark:bg-slate-100 dark:shadow-indigo-400">
               <h1 className="m-auto text-6xl ">JPWT</h1>
             </div>
           </h1>
@@ -15,16 +16,20 @@ const Hero = () => {
             alt="hero image"
             className="mt-5 rounded-lg shadow-lg  md:hidden"
           />
-          <h2 className="mt-4 font-semibold text-xl sm:mt-5 sm:text-2xl text-slate-400">
+          <h2 className="mt-4 font-semibold text-xl sm:mt-5 sm:text-2xl text-slate-400 dark:text-slate-100">
             Welcome to digital painting{" "}
-            <span className="text-slate-700 text-2xl ">JPWT</span>
+            <span className="text-slate-700 text-2xl dark:text-gray-700">
+              JPWT
+            </span>
           </h2>
-          <p className="font-light ">
+          <p className="font-light dark:text-slate-100">
             Website for portofolio digital painting{" "}
-            <span className="text-xl text-sky-700">JPWT </span>
+            <span className="text-xl text-sky-700 dark:text-gray-800">
+              JPWT{" "}
+            </span>
             This website is made from React.js and Tailwindcss.
           </p>
-          <div className="mt-5 w-32 h-10 bg-sky-600 text-white flex rounded-xl  shadow-md  hover:shadow-lg hover:shadow-sky-300 hover:-translate-y-1">
+          <div className="mt-5 w-32 h-10 bg-sky-600 text-white flex rounded-xl  shadow-md  hover:shadow-lg hover:shadow-sky-300 hover:-translate-y-1 dark:bg-indigo-500 dark:hover:shadow-indigo-400">
             <a
               href="https://www.artstation.com/jpwt"
               target="_blank"
@@ -47,7 +52,7 @@ const Hero = () => {
           <img
             src="./img/gabut-6.png"
             alt="doragon"
-            className="object-cover rounded-l-full shadow-lg  group-hover:shadow-xl "
+            className="object-cover rounded-l-full shadow-lg  group-hover:shadow-xl  dark:hover:shadow-indigo-400"
           />
         </div>
       </div>
