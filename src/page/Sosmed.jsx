@@ -1,6 +1,6 @@
 import Footer from "../component/Footer";
 import Navbar from "../component/Navbar";
-import DataSosmed from "../component/dataSosmed";
+import DataSosmed from "../component/DataSosmed";
 
 const Sosmed = () => {
   return (
