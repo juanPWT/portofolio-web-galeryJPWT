@@ -4,6 +4,7 @@ export default {
   darkMode: "class",
   theme: {
     extend: {
+      backgroundImage: {},
       fontFamily: {
         inter: "Inter",
       },

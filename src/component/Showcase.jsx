@@ -21,22 +21,22 @@ const Showcase = () => {
           Digital Painting
         </div>
         <div className="h-15 aspect-[4/3] md:aspect-[3/4]  xl:aspect-[4/3] rounded-lg overflow-hidden group relative hover:scale-90 transition-all duration-500 shadow-lg dark:shadow-indigo-300">
-          <div className="w-full h-full bg-[url('./img/gabut-6.png')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div>
+          <div className="w-full h-full bg-[url('../img/gabut-6.png')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div>
         </div>
         <div className="h-15 aspect-[4/3] md:aspect-[3/4]  xl:aspect-[4/3] rounded-lg overflow-hidden group relative hover:scale-90 transition-all duration-500 shadow-lg dark:shadow-indigo-300">
-          <div className="w-full h-full bg-[url('./img/profil.png')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div>
+          <div className="w-full h-full bg-[url('../img/profil.png')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div>
         </div>
         <div className="h-15 aspect-[4/3] md:aspect-[3/4]  xl:aspect-[4/3] rounded-lg overflow-hidden group relative hover:scale-90 transition-all duration-500 shadow-lg dark:shadow-indigo-300">
-          <div className="w-full h-full bg-[url('./img/doom-dragon.png')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div>
+          <div className="w-full h-full bg-[url('../img/doom-dragon.png')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div>
         </div>
         <div className="h-15 aspect-[4/3] md:aspect-[3/4]  xl:aspect-[4/3] rounded-lg overflow-hidden group relative hover:scale-90 transition-all duration-500 shadow-lg dark:shadow-indigo-300">
-          <div className="w-full h-full bg-[url('./img/dragon1.png')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div>
+          <div className="w-full h-full bg-[url('../img/dragon1.png')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div>
         </div>
         <div className="h-15 aspect-[4/3] md:aspect-[3/4]  xl:aspect-[4/3] rounded-lg overflow-hidden group relative hover:scale-90 transition-all duration-500 shadow-lg dark:shadow-indigo-300">
-          <div className="w-full h-full bg-[url('./img/elf-princess-sophia.png')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div>
+          <div className="w-full h-full bg-[url('../img/elf-princess-sophia.png')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div>
         </div>
         <div className="h-15 aspect-[4/3] md:aspect-[3/4]  xl:aspect-[4/3] rounded-lg overflow-hidden group relative hover:scale-90 transition-all duration-500 shadow-lg dark:shadow-indigo-300">
-          <div className="w-full h-full bg-[url('./img/gabut-4.png')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div>
+          <div className="w-full h-full bg-[url('../img/gabut-4.png')] bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500"></div>
         </div>
         <div className="h-15 aspect-[4/3] md:aspect-[3/4]  xl:aspect-[4/3] rounded-lg overflow-hidden group relative hover:scale-90 transition-all duration-500 shadow-lg dark:shadow-indigo-300">
           <div className="w-full h-full bg-slate-300 bg-cover bg-center absolute group-hover:scale-125 transition-all duration-500 flex">
