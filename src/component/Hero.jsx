@@ -12,7 +12,7 @@ const Hero = () => {
             </div>
           </h1>
           <img
-            src="./img/gabut-6.png"
+            src="../img/gabut-6.png"
             alt="hero image"
             className="mt-5 rounded-lg shadow-lg  md:hidden"
           />
