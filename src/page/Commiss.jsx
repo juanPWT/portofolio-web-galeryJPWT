@@ -54,7 +54,7 @@ const Commiss = () => {
                     <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-6">
                         {[
                             { name: "Headshot", price: "Rp. 75.000", img: "../img/elf-princess-sophia.png", link: "https://docs.google.com/forms/d/e/1FAIpQLScceQGVfJCLllndxt8Z7vZjq4F-l2P8Q_Or5YqGl5AkWwIKYA/viewform?usp=dialog" },
-                            { name: "Full Body", price: "Rp. 150.000", img: "../../public/img/full body.png", link: "https://docs.google.com/forms/d/e/1FAIpQLSd8aG2Xzm55NdZaBRO-nncPqK7GDtIX7IVwLBfBQnTmEbn8jw/viewform?usp=dialog" },
+                            { name: "Full Body", price: "Rp. 150.000", img: "https://cdnb.artstation.com/p/assets/images/images/084/483/609/large/jpwt-full-body.jpg?1738500480", link: "https://docs.google.com/forms/d/e/1FAIpQLSd8aG2Xzm55NdZaBRO-nncPqK7GDtIX7IVwLBfBQnTmEbn8jw/viewform?usp=dialog" },
                         ].map((item, index) => (
                             <div key={index} className="bg-white dark:bg-gray-800 p-4 rounded-lg shadow-lg hover:scale-105 transition transform flex flex-col">
                                 <img src={item.img} alt={item.name} className="w-full h-48 object-cover rounded-md" />
