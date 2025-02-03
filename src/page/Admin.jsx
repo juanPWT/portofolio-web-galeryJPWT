@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Footer from "../component/Footer";
 import Navbar from "../component/Navbar";
+import { db, doc, getDoc, setDoc } from "../../firebase.js";
 
 const Admin = () => {
     const [status, setStatus] = useState({
@@ -14,30 +15,56 @@ const Admin = () => {
 
     // Load data dari localStorage saat komponen dimuat
     useEffect(() => {
-        const savedStatus = localStorage.getItem("commissionStatus");
-        if (savedStatus) {
-            setStatus(JSON.parse(savedStatus));
-        }
+        const fetchData = async () => {
+            const docRef = doc(db, "commissions", "status");
+            const docSnap = await getDoc(docRef);
+
+            if (docSnap.exists()) {
+                setStatus(docSnap.data());
+            }
+        };
+
+        fetchData();
     }, []);
 
     // Simpan ke localStorage
-    const saveStatus = () => {
-        localStorage.setItem("commissionStatus", JSON.stringify(status));
-        alert("Status berhasil disimpan!");
+    const saveStatus = async () => {
+        try {
+            await setDoc(doc(db, "commissions", "status"), status);
+            alert("Status berhasil disimpan ke Firebase!");
+        } catch (error) {
+            console.error("Error saving document:", error);
+        }
     };
 
     // Reset status ke default
-    const resetStatus = () => {
-        localStorage.removeItem("commissionStatus");
-        setStatus({
-            open: "Open",
-            request: 0,
-            waitlist: 0,
-            onWorking: 0,
-            done: 0,
-            max: 0
-        });
-        alert("Status berhasil direset!");
+    const resetStatus = async () => {
+        try {
+            // Set data ke nilai default di Firestore
+            await setDoc(doc(db, "commissions", "status"), {
+                open: "Colse ❌",
+                request: 0,
+                waitlist: 0,
+                onWorking: 0,
+                done: 0,
+                max: 0
+            });
+
+            // Reset state di React
+            setStatus({
+                open: "Open",
+                request: 0,
+                waitlist: 0,
+                onWorking: 0,
+                done: 0,
+                max: 0
+            });
+
+            alert("Status berhasil direset di Firebase!");
+        } catch (error) {
+            console.error("Error resetting document:", error);
+            alert("Gagal mereset status!");
+        }
     };
 
     return (

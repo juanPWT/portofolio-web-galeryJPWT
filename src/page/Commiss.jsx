@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import Footer from "../component/Footer";
 import Navbar from "../component/Navbar";
+import { db, doc, getDoc } from "../../firebase.js";
 
 const Commiss = () => {
-
     const [status, setStatus] = useState({
         open: "Close ❌",
         request: 0,
@@ -14,10 +14,16 @@ const Commiss = () => {
     });
 
     useEffect(() => {
-        const savedStatus = localStorage.getItem("commissionStatus");
-        if (savedStatus) {
-            setStatus(JSON.parse(savedStatus));
-        }
+        const fetchData = async () => {
+            const docRef = doc(db, "commissions", "status");
+            const docSnap = await getDoc(docRef);
+
+            if (docSnap.exists()) {
+                setStatus(docSnap.data());
+            }
+        };
+
+        fetchData();
     }, []);
 
     return (
