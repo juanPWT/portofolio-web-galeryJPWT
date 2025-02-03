@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { db, doc, getDoc } from "../../firebase.js";
 
 const Hero = () => {
     const [status, setStatus] = useState({
